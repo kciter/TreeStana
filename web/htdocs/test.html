@@ -1,0 +1,62 @@
+
+<!doctype html>
+<html>
+	<head>
+		<title>Treestana</title>
+		
+		<meta charset='utf-8' />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>
+		
+		<script type="text/javascript">
+			function init() {
+				window.addEventListener("orientationchange", orientationChange, true);
+			}
+
+			function orientationChange(e) {
+				var orientation="portrait";
+				if(window.orientation == -90 || window.orientation == 90)
+					orientation = "landscape";
+				document.getElementById("status").innerHTML+=orientation+"<br>";
+			}
+			function login() {
+				$.ajax( './api/app_login.php', {
+				//$.ajax( 'http://wlogin.hosting.bizfree.kr/z/api/app_login.php', {
+					type: 'post',
+					dataType: 'json',
+					data: ({"email":$('#email').val(),"password":$('#password').val()}),
+					success: function(json) {
+						if( json != 'fail' )
+						{
+							var date = new Date();
+							var validity = 10;
+							date.setDate( date.getDate() + validity );
+							document.cookie = 'idx=' + json['idx'] + ';email=' + json['email'] + ';password=' + json['password'] + ';name=' + json['name'] + ';expires=' + date.toGMTString();
+							$('#success').css( 'display', 'block' );
+							$('#success').animate( { opacity: 1 }, 1000, function() {
+								location.href = './main.html';
+							});
+						}
+						else
+						{
+							alert( '잘못된 아이디/비밀번호 입니다' );
+						}
+					}
+				});
+
+			}
+		</script>
+	</head>
+	
+	<body onload='init()'>
+		<div id='status'></div>
+		<div id="success" style="position:absolute;top:0;left:0;width:100%;height:100%;background-color:black;opacity:0;display:none;"></div>
+		<h1>Treestana</h1>
+		
+		<form id='form' action='javascript:login()' method='POST'>
+			Email: <input id="email" type='text' placeholder='Email' /><br />
+			Password: <input id="password" type='password' placeholder='Password' /><br />
+			<input type='submit' />
+		</form>
+	</body>
+</html>

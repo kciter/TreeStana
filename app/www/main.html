@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Treestana</title>
+		
+		<link href='./css/main.css' rel='stylesheet' type='text/css' />
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="http://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
+		<script src="./js/processing.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			function getProcessingSketchId () { return 'PhoneTree'; }
+		</script>
+		<script type="text/javascript" charset="utf-8" src="./js/cordova.js"></script>
+		<script type="text/javascript" charset="utf-8" src="./js/pg-plugin-screen-orientation.js"></script>
+  		<script type="text/javascript" charset="utf-8" src="./js/cdv-plugin-fb-connect.js"></script>
+  		<script type="text/javascript" charset="utf-8" src="./js/facebook_js_sdk.js"></script>
+  		<script type="text/javascript" charset="utf-8" src="http://malsup.github.io/jquery.form.js"></script>
+  		<script type="text/javascript" charset="utf-8" src="./js/jquery.lettering.js"></script>
+  		<script type="text/javascript" charset="utf-8" src="./js/jquery.lettering.animate.js"></script>
+		
+		<script type="text/javascript" src="./js/main.js"></script>
+	</head>
+	<body onload='onLoad()'>
+		<canvas id="PhoneTree" data-processing-sources="PhoneTree.pde"></canvas>
+		<div id="menuTap">+</div>
+		<div id="mugMenu">M</div>
+		<div id="galleryMenu">G</div>
+		<div id="exitMenu">L</div> 
+		<div id="blur"></div> 
+		
+		<span id="mugText">머그컵 인증</span>
+		<span id="galleryText">인증 갤러리</span>
+		<span id="exitText">로그아웃</span>
+		
+		<div id="textarea">
+			<div>TreeStana는 종이컵 사용 줄이기 캠페인관련 앱 입니다.</div>
+			<div>사랑하는 가족, 친구, 애인과의 약속이며</div>
+			<div>지친 내 마음을 케어해주는 장소인 카페</div>
+			<div>하지만 많은 종이컵 사용으로 환경이 파괴된다는 사실 아셨나요?</div>
+			<div>이젠 머그컵, 텀플러 사용을 생활화 할 때 입니다.</div>
+		</div> 
+		 
+		<div id="fade"></div>
+		
+		<div id="mugGallery">
+			<div id="mugGalleryExitButton">X</div>
+			
+			<div id="mugGalleryWrapper">
+			</div>
+			<div id="mugGalleryPrev" style="display:none">Prev</div>
+			<div id="mugGalleryNext" style="display:none">Next</div>
+		</div>
+	</body>
+</html> 

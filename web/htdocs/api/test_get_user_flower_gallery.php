@@ -1,0 +1,15 @@
+
+
+<!doctype html>
+<html lang="ko">
+	<head>
+		<title> test </title>
+	</head>
+
+	<body>
+		<form action="./app_get_user_flower_gallery.php" method="POST">
+			user_idx <input type="text" name="user_idx" /><br />
+			<input type="submit" />
+		</form>
+	</body>
+</html>

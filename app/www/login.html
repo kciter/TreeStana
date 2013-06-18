@@ -1,0 +1,37 @@
+
+<!doctype html>
+<html>
+	<head>
+		<title>Treestana</title>
+		
+		<meta charset='utf-8' />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic|PT+Serif:400,700' rel='stylesheet' type='text/css'>
+		<link href='./css/login.css' rel='stylesheet' type='text/css' />
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="./js/cordova.js"></script>
+		<script src="http://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="./js/pg-plugin-screen-orientation.js"></script>
+		
+		<script type="text/javascript" src="./js/login.js"></script>
+	</head>
+	
+	<body onload='onLoad();'>
+		<div id="success"></div>
+		<div id="wrapper">
+			<div id="verticalAlign">
+			<div id='title'>TreeStana</div>
+			
+			<form id='form' action='javascript:login()' method='POST'>
+				<input id="email" type='email' placeholder='이메일' value='test@test.com' /><br />
+				<input id="password" type='password' placeholder='비밀번호' value='test' /><br />
+				<input id="login" value="로그인" type='submit' /><br />
+				<div id="join" onclick='javascript:join()'>회원가입 하기</div>
+				<button id="facebook" onclick='javascript:facebook()'>페이스북으로 로그인</button>
+			</form>
+			</div> 
+		</div>
+	</body>
+</html> 

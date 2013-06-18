@@ -1,0 +1,201 @@
+*
+{ 
+	padding:0;
+	margin:0;
+	-webkit-tap-highlight-color:rgba(0,0,0,0); 
+}
+body
+{
+	background-color: black !important; 
+	width:100%;
+	height:100%; 
+}
+#wrapper
+{
+	display:table;
+	width:100%;
+	height:100%; 
+	background-image: url('../images/mobileS5.jpg'); 
+	background-size: 100% 100%; 
+}
+#verticalAlign 
+{ 
+	display:table-cell; 
+	vertical-align:middle; 
+	width:100%; 
+}
+#success 
+{ 
+	position:absolute; 
+	top:0;
+	left:0; 
+	width:100%; 
+	height:100%; 
+	background-color:black; opacity:1; 
+}
+#title 
+{
+	text-align: center;
+	font-family: 'PT Sans';
+	font-weight: bold;
+	font-size: 3.5em;
+	color: rgb(47,130,194);
+	text-shadow: 1px 2px 3px #ddd; }
+#form 
+{
+	margin-top:60px; 
+	text-align: center; 
+	width:100%; 
+}
+#email 
+{ 
+	padding:5px; 
+	width:90%;
+	height: 30px; 
+	border:1px solid #ddd;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px; 
+}
+#password
+{
+	padding: 5px; 
+	width:90%; 
+	height:30px; 
+	border:1px solid #ddd;
+	border-top:0px; 
+	border-bottom-left-radius:10px; 
+	border-bottom-right-radius:10px; 
+}
+#login 
+{ 
+	margin-top:30px; 
+	width:94%; 
+	height:40px;
+	padding: 5px;
+	border-radius: 10px;
+	border: solid 1px #5f9ec1;
+	color: white;
+	font-weight: bold;
+
+	text-shadow: 0px 1px 1px #4c84a3;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #86c4e7), color-stop(100%, #67aad1));
+	background: -webkit-linear-gradient(#86c4e7, #67aad1);
+	background: -moz-linear-gradient(#86c4e7, #67aad1);
+	background: -o-linear-gradient(#86c4e7, #67aad1);
+	-pie-background: linear-gradient(#86c4e7,#67aad1);
+	background: linear-gradient(#86c4e7,#67aad1); 
+}
+#login:hover
+{
+	text-shadow: 0px 1px 1px #4c84a3;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #96d4f7), color-stop(100%, #77bae1));
+	background: -webkit-linear-gradient(#96d4f7, #77bae1);
+	background: -moz-linear-gradient(#96d4f7, #77bae1);
+	background: -o-linear-gradient(#96d4f7, #77bae1);
+	-pie-background: linear-gradient(#96d4f7,#77bae1);
+	background: linear-gradient(#96d4f7,#77bae1);
+
+	-moz-box-shadow: 0 0 7px #6799FF;
+	-webkit-box-shadow: 0 0 7px #6799FF;
+	box-shadow: 0 0 10px #6799FF;
+}
+#login:active
+{
+	text-shadow: 0px 1px 1px #4c84a3;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #67aad1), color-stop(100%, #86c4e7));
+	background: -webkit-linear-gradient(#67aad1, #86c4e7);
+	background: -moz-linear-gradient(#67aad1, #86c4e7);
+	background: -o-linear-gradient(#67aad1, #86c4e7);
+	-pie-background: linear-gradient(#67aad1,#86c4e7);
+	background: linear-gradient(#67aad1,#86c4e7);
+}
+#join 
+{
+	width:91%; 
+	height:30px; 
+	padding: 5px; 
+	border-radius: 10px;
+	border: solid 1px #ff7e00;
+	color: white;
+	font-weight: bold;
+	line-height: 30px;
+
+	margin: 0 auto;
+	margin-top:10px; 
+
+	text-shadow: 0px 1px 1px #d16d00;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffa516), color-stop(100%, #f98809));
+	background: -webkit-linear-gradient(#ffa516, #f98809);
+	background: -moz-linear-gradient(#ffa516, #f98809);
+	background: -o-linear-gradient(#ffa516, #f98809);
+	-pie-background: linear-gradient(#ffa516,#f98809);
+	background: linear-gradient(#ffa516,#f98809);
+}
+#join:hover
+{
+	text-shadow: 0px 1px 1px #d16d00;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffb526), color-stop(100%, #f99819));
+	background: -webkit-linear-gradient(#ffb526, #f99819);
+	background: -moz-linear-gradient(#ffb526, #f99819);
+	background: -o-linear-gradient(#ffb526, #f99819);
+	-pie-background: linear-gradient(#ffb526,#f99819);
+	background: linear-gradient(#ffb526,#f99819);
+
+	-moz-box-shadow: 0 0 7px #FF7373;
+	-webkit-box-shadow: 0 0 7px #FF7373;
+	box-shadow: 0 0 10px #FF7373;
+}
+#join:active
+{
+	text-shadow: 0px 1px 1px #d16d00;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f98809), color-stop(100%, #ffa516));
+	background: -webkit-linear-gradient(#f98809, #ffa516);
+	background: -moz-linear-gradient(#f98809, #ffa516);
+	background: -o-linear-gradient(#f98809, #ffa516);
+	-pie-background: linear-gradient(#f98809,#ffa516);
+	background: linear-gradient(#f98809,#ffa516);
+}
+
+#facebook 
+{ 
+	margin-top:80px; 
+	width:94%; 
+	height:40px; 
+	padding: 5px; 
+	border-radius: 10px;
+	border: solid 1px #3b4978;
+	color: white;
+	font-weight: bold;
+
+	text-shadow: 0px 1px 1px #3b4978;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3b5998), color-stop(100%, #2b4988));
+	background: -webkit-linear-gradient(#3b5998, #2b4988);
+	background: -moz-linear-gradient(#3b5998, #2b4988);
+	background: -o-linear-gradient(#3b5998, #2b4988);
+	-pie-background: linear-gradient(#3b5998,#2b4988);
+	background: linear-gradient(#3b5998,#2b4988); 
+}
+#facebook:hover
+{
+	text-shadow: 0px 1px 1px #3b4978;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4b69a8), color-stop(100%, #3b5998));
+	background: -webkit-linear-gradient(#4b69a8, #3b5998);
+	background: -moz-linear-gradient(#4b69a8, #3b5998);
+	background: -o-linear-gradient(#4b69a8, #3b5998);
+	-pie-background: linear-gradient(#4b69a8,#3b5998);
+	background: linear-gradient(#4b69a8,#3b5998); 
+
+	-moz-box-shadow: 0 0 7px #6b89c8;
+	-webkit-box-shadow: 0 0 7px #6b89c8;
+	box-shadow: 0 0 10px #6b89c8;
+}
+#facebook:active
+{
+	text-shadow: 0px 1px 1px #4c84a3;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2b4988), color-stop(100%, #3b5998));
+	background: -webkit-linear-gradient(#2b4988, #3b5998);
+	background: -moz-linear-gradient(#2b4988, #3b5998);
+	background: -o-linear-gradient(#2b4988, #3b5998);
+	-pie-background: linear-gradient(#2b4988,#3b5998);
+	background: linear-gradient(#2b4988,#3b5998);
+}

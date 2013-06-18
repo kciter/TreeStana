@@ -1,0 +1,268 @@
+*
+{
+	padding:0;
+	margin:0; 
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+body 
+{ 
+	background-color: black !important; 
+	width:100%; 
+	height:100%;
+	overflow: hidden;
+}
+#PhoneTree 
+{ 
+	position:absolute; 
+	top:0;
+	left:0; 
+	width:100%; 
+	height:100%; 
+}
+
+#menuTap 
+{ 
+	color: white; 
+	font-weight: bold; 
+	text-align:center; 
+	font-size:2em; 
+	position:absolute; 
+	bottom:20px; 
+	right:30px; 
+	width:40px;
+	height:40px;
+	text-shadow: 0px 1px 1px #0D8B06;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1DDB16), color-stop(100%, #09A701));
+	background: -webkit-linear-gradient(#1DDB16, #09A701);
+	background: -moz-linear-gradient(#1DDB16, #09A701);
+	background: -o-linear-gradient(#1DDB16, #09A701);
+	-pie-background: linear-gradient(#1DDB16,#09A701);
+	background:linear-gradient(#1DDB16,#09A701); 
+	border:4px solid white; 
+	border-radius:50px; 
+	z-index:1000;
+}
+#mugMenu 
+{ 
+	color: white; 
+	font-weight: bold; 
+	text-align:center; 
+	font-size:1.5em; 
+	line-height:40px; 
+	position:absolute; 
+	bottom:20px; 
+	right:30px; 
+	width:40px; 
+	height:40px; 
+	text-shadow: 0px 1px 1px #d16d00;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffa516), color-stop(100%, #f98809));
+	background: -webkit-linear-gradient(#ffa516, #f98809);
+	background: -moz-linear-gradient(#ffa516, #f98809);
+	background: -o-linear-gradient(#ffa516, #f98809);
+	-pie-background: linear-gradient(#ffa516,#f98809);
+	background: linear-gradient(#ffa516,#f98809);
+	border:4px solid white; 
+	border-radius:50px; 
+	z-index:900;
+	opacity: 0;
+}
+#galleryMenu
+{ 
+	color: white; 
+	font-weight: bold; 
+	text-align:center; 
+	font-size:1.5em; 
+	line-height:40px; 
+	position:absolute; 
+	bottom:20px;
+	right:30px; 
+	width:40px; 
+	height:40px; 
+	text-shadow: 0px 1px 1px #4c84a3;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #86c4e7), color-stop(100%, #67aad1));
+	background: -webkit-linear-gradient(#86c4e7, #67aad1);
+	background: -moz-linear-gradient(#86c4e7, #67aad1);
+	background: -o-linear-gradient(#86c4e7, #67aad1);
+	-pie-background: linear-gradient(#86c4e7,#67aad1);
+	background: linear-gradient(#86c4e7,#67aad1); 
+	border:4px solid white; 
+	border-radius:50px; 
+	z-index:800;
+	opacity: 0;
+}
+#exitMenu 
+{ 
+	color: white; 
+	font-weight: bold; 
+	text-align:center; 
+	font-size:1.5em; 
+	line-height:40px; 
+	position:absolute; 
+	bottom:20px; 
+	right:30px; 
+	width:40px; 
+	height:40px; 
+	text-shadow: 0px 1px 1px #3b4978;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3b5998), color-stop(100%, #2b4988));
+	background: -webkit-linear-gradient(#3b5998, #2b4988);
+	background: -moz-linear-gradient(#3b5998, #2b4988);
+	background: -o-linear-gradient(#3b5998, #2b4988);
+	-pie-background: linear-gradient(#3b5998,#2b4988);
+	background: linear-gradient(#3b5998,#2b4988); 
+	border:4px solid white; 
+	border-radius:50px; 
+	z-index:700;
+	opacity: 0;
+}
+#blur
+{ 
+	position:absolute; 
+	top:0;
+	left:0; 
+	width:100%; 
+	height:100%; 
+	background-color:black; 
+	z-index:600; 
+	opacity:0; 
+}
+
+span
+{
+	color: white;
+	z-index: 650;
+	font-size: 1.2em;
+	position: absolute;
+	opacity: 1;
+	font-weight: bold;
+	opacity: 0;
+}
+
+#mugText
+{
+	right: 520px;
+	bottom: 258px;
+}
+#galleryText
+{
+	right: 425px;
+	bottom: 170px;
+}
+#exitText
+{
+	right: 290px;
+	bottom: 104px;
+}
+
+#textarea
+{
+	position: absolute;
+	z-index: 100;
+	color: white;
+	top: 20px;
+	left: 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-shadow: 0px 1px 1px #111;
+	width: 100%;
+	line-height: 40px;
+}
+#textarea div
+{
+	display: none;
+	width: 100%;
+}
+
+#mugGallery
+{
+	position: absolute;
+	width: 95%;
+	height: 95%;
+	border: 4px solid black;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fff), color-stop(100%, #ddd));
+	background: -webkit-linear-gradient(#fff, #ddd);
+	background: -moz-linear-gradient(#fff, #ddd);
+	background: -o-linear-gradient(#fff, #ddd);
+	-pie-background: linear-gradient(#fff,#ddd);
+	background: linear-gradient(#fff,#ddd);
+
+	left: 2%;
+	top: 1.5%;
+	z-index: 2000;
+
+	display: none;
+	opacity: 0;
+}
+#mugGalleryExitButton
+{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	border: 2px solid #151515;
+	border-radius: 15px;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #000), color-stop(100%, #555));
+	background: -webkit-linear-gradient(#000, #555);
+	background: -moz-linear-gradient(#000, #555);
+	background: -o-linear-gradient(#000, #555);
+	-pie-background: linear-gradient(#000,#555);
+	background: linear-gradient(#000,#555);
+	left: 93%;
+	top: 10px;
+	line-height: 30px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.4em;
+	color: white;
+}
+#mugGalleryExitButton:hover
+{
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #111), color-stop(100%, #636363));
+	background: -webkit-linear-gradient(#111, #636363);
+	background: -moz-linear-gradient(#111, #636363);
+	background: -o-linear-gradient(#111, #636363);
+	-pie-background: linear-gradient(#111,#636363);
+	background: linear-gradient(#111,#636363);
+}
+#mugGalleryExitButton:active
+{
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #555), color-stop(100%, #000));
+	background: -webkit-linear-gradient(#555, #000);
+	background: -moz-linear-gradient(#555, #000);
+	background: -o-linear-gradient(#555, #000);
+	-pie-background: linear-gradient(#555,#000);
+	background: linear-gradient(#555,#000);
+}
+#mugGalleryWrapper
+{
+	width: 90%;
+	height: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+.mugGalleryImg
+{
+	width: 20%;
+	height: 35%;
+	border: 2px solid black;
+	margin: 5px;
+}
+#mugGalleryPrev
+{
+	position: absolute;
+	left: 10%;
+	top: 80%;
+	color: black;
+	font-size: 2em;
+}
+#mugGalleryNext
+{
+	position: absolute;
+	left: 80%;
+	top: 80%;
+	color: black;
+	font-size: 2em;
+}
+#mugGalleryImgZoom
+{
+}
+
+#fade { position:absolute; top:0; left:0; width:100%; height:100%; background-color:black; z-index:1100; opacity:1; }
